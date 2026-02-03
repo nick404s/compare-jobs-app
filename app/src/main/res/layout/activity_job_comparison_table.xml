@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JobComparisonTableActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+                    <!--       jobTitle: String-->
+                    <TextView
+                        android:id="@+id/tableHeaderAttribute"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tableHeaderAttribute"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tableHeaderFirstJob"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tableHeaderFirstJob"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tableHeaderSecondJob"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tableHeaderSecondJob"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--       jobTitle: String-->
+                    <TextView
+                        android:id="@+id/comparisonLabelTitle"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_title" />
+
+                    <TextView
+                        android:id="@+id/comparisonFirstJobTitle"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_title" />
+
+                    <TextView
+                        android:id="@+id/comparisonSecondJobTitle"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_title" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--        description: String-->
+                    <TextView
+                        android:id="@+id/comparisonLabelDescription"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_description" />
+
+                    <TextView
+                        android:id="@+id/comparisonFirstJobDescription"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_description" />
+
+                    <TextView
+                        android:id="@+id/comparisonSecondJobDescription"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_description" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--        location: Location-->
+                    <TextView
+                        android:id="@+id/comparisonLabelLocation"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_location" />
+
+                    <TextView
+                        android:id="@+id/comparisonFirstJobLocation"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_location" />
+
+                    <TextView
+                        android:id="@+id/comparisonSecondJobLocation"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_location" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--        yearlySalary: double-->
+                    <TextView
+                        android:id="@+id/comparisonLabelYearlySalary"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_adjusted_field_yearly_salary" />
+
+                    <TextView
+                        android:id="@+id/comparisonFirstJobYearlySalary"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_yearly_salary" />
+
+                    <TextView
+                        android:id="@+id/comparisonSecondJobYearlySalary"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_yearly_salary" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--        yearlyBonus: double-->
+                    <TextView
+                        android:id="@+id/comparisonLabelYearlyBonus"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_adjusted_field_yearly_bonus" />
+
+                    <TextView
+                        android:id="@+id/comparisonFirstJobYearlyBonus"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_yearly_bonus" />
+
+                    <TextView
+                        android:id="@+id/comparisonSecondJobYearlyBonus"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_yearly_bonus" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--        yearlyStockOptions: int-->
+                    <TextView
+                        android:id="@+id/comparisonLabelYearlyStockOptions"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_yearly_stock_options" />
+
+                    <TextView
+                        android:id="@+id/comparisonFirstJobYearlyStockOptions"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_yearly_stock_options" />
+
+                    <TextView
+                        android:id="@+id/comparisonSecondJobYearlyStockOptions"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_yearly_stock_options" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--        homeBuyingProgramFund: bool-->
+                    <TextView
+                        android:id="@+id/comparisonLabelHomeBuyingProgramFund"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_home_buying_program_fund" />
+
+                    <TextView
+                        android:id="@+id/comparisonFirstJobHomeBuyingProgramFund"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_home_buying_program_fund" />
+
+                    <TextView
+                        android:id="@+id/comparisonSecondJobHomeBuyingProgramFund"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_home_buying_program_fund" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--        personalChoiceHolidays: int-->
+                    <TextView
+                        android:id="@+id/comparisonLabelPersonalChoiceHolidays"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_personal_choice_holidays" />
+
+                    <TextView
+                        android:id="@+id/comparisonFirstJobPersonalChoiceHolidays"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_personal_choice_holidays" />
+
+                    <TextView
+                        android:id="@+id/comparisonSecondJobPersonalChoiceHolidays"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_personal_choice_holidays" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--        monthlyInternetStipend: double-->
+                    <TextView
+                        android:id="@+id/comparisonLabelMonthlyInternetStipend"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_monthly_internet_stipend" />
+
+                    <TextView
+                        android:id="@+id/comparisonFirstJobMonthlyInternetStipend"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_monthly_internet_stipend" />
+
+                    <TextView
+                        android:id="@+id/comparisonSecondJobMonthlyInternetStipend"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_field_monthly_internet_stipend" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonCancel"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/doAnotherJobOfferComparison" />
+
+            <Button
+                android:id="@+id/buttonMainMenu"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/returnToMainMenu" />
+
+
+        </LinearLayout>
+
+<!--        <include-->
+<!--            android:id="@+id/cancelBar"-->
+<!--            layout="@layout/cancel_bar" />-->
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

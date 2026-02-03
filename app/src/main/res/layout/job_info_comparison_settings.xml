@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <!--        yearlySalary: double-->
+    <EditText
+        android:id="@+id/editTextCurrentJobYearlySalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/job_field_yearly_salary"
+        android:importantForAutofill="no"
+        android:inputType="number" />
+
+    <!--        yearlyBonus: double-->
+    <EditText
+        android:id="@+id/editTextCurrentJobYearlyBonus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/job_field_yearly_bonus"
+        android:importantForAutofill="no"
+        android:inputType="number" />
+
+    <!--        yearlyStockOptions: int-->
+    <EditText
+        android:id="@+id/editTextCurrentJobYearlyStockOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/job_field_yearly_stock_options"
+        android:importantForAutofill="no"
+        android:inputType="number" />
+
+    <!--        homeBuyingProgramFund: bool-->
+    <EditText
+        android:id="@+id/editTextCurrentJobHomeBuyingProgramFund"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/job_field_home_buying_program_fund"
+        android:importantForAutofill="no"
+        android:inputType="number" />
+
+    <!--        personalChoiceHolidays: int-->
+    <EditText
+        android:id="@+id/editTextCurrentJobPersonalChoiceHolidays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/job_field_personal_choice_holidays"
+        android:importantForAutofill="no"
+        android:inputType="number" />
+
+    <!--        monthlyInternetStipend: double-->
+    <EditText
+        android:id="@+id/editTextCurrentJobMonthlyInternetStipend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/job_field_monthly_internet_stipend"
+        android:importantForAutofill="no"
+        android:inputType="number" />
+</merge>
