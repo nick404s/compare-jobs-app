@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "JobCompare6300"
+rootProject.name = "CompareJobs"
 include ':app'
